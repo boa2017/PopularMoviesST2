@@ -1,0 +1,297 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="preferenceTheme">@style/PreferenceThemeOverlay</item>
+    </style>
+
+    <!-- Activity Detail style -->
+
+    <style name="linear_layout_1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="movie_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:text">Title</item>
+        <item name="android:background">@color/colorPrimaryLight</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:gravity">fill</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="linear_layout_2">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">5</item>
+        <item name="android:minHeight">200dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="thumbnail">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:elevation">12dp</item>
+    </style>
+
+    <style name="linear_layout_3">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingStart">2dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="date_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/movie_release_date</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="release_date">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="vote_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/movie_vote_average</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="movie_vote_average">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:paddingEnd">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="linear_layout_4">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="favorite_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingStart">60dp</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:onClick">onClickAddMovies</item>
+        <item name="android:src">@drawable/ic_favorite_off</item>
+    </style>
+
+    <style name="overview_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/movie_overview</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+    </style>
+
+    <style name="movie_overview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="linear_layout_5">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="view_extras">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@color/normal_rating_color</item>
+    </style>
+
+    <style name="movie_trailer">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/movie_trailer</item>
+    </style>
+
+    <style name="no_trailer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/no_trailer_found</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <style name="view_2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@color/normal_rating_color</item>
+    </style>
+
+    <style name="movie_review">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/movie_review</item>
+    </style>
+
+    <style name="no_review_view">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:text">@string/no_review_found</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+
+    <!-- Activity Movie style -->
+
+    <style name="gridView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:numColumns">2</item>
+    </style>
+
+    <style name="gridView_land">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:numColumns">3</item>
+    </style>
+
+    <style name="error_message_display">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:visibility">invisible</item>
+        <item name="android:text">@string/error_message</item>
+        <item name="android:layout_margin">8dp</item>
+    </style>
+
+    <!-- Movie View style -->
+
+    <style name="movie_poster">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="tv_movie_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:text">@string/movie_title</item>
+        <item name="android:textColor">@color/normal_rating_color</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">#8c000000</item>
+    </style>
+
+    <!-- Review View style -->
+
+    <style name="review_author">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Author</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="review_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Review</item>
+        <item name="android:textColor">@color/text_font</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:maxLines">5</item>
+    </style>
+
+    <!-- Trailer View style -->
+
+    <style name="trailer_iv">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">115dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="linear_layout_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">0dp</item>
+    </style>
+
+    <style name="card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">280dp</item>
+
+    </style>
+
+</resources>
+

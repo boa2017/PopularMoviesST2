@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.popularmoviesst1.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            style="@style/linear_layout_1">
+
+            <TextView
+                android:id="@+id/movie_title"
+                style="@style/movie_title" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_2"
+                style="@style/linear_layout_2">
+
+                <ImageView
+                    android:id="@+id/thumbnail"
+                    style="@style/thumbnail"
+                    tools:src="@tools:sample/avatars" />
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_3"
+                    style="@style/linear_layout_3">
+
+                    <TextView
+                        android:id="@+id/date_heading"
+                        style="@style/date_heading" />
+
+                    <TextView
+                        android:id="@+id/release_date"
+                        style="@style/release_date"
+                        tools:text="@string/date_sample" />
+
+                    <TextView
+                        android:id="@+id/vote_heading"
+                        style="@style/vote_heading" />
+
+                    <TextView
+                        android:id="@+id/movie_vote_average"
+                        style="@style/movie_vote_average"
+                        tools:text="@string/vote_sample" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_4"
+                        style="@style/linear_layout_4">
+
+                        <ImageButton
+                            android:id="@+id/favorite_button"
+                            style="@style/favorite_button" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/overview_heading"
+                style="@style/overview_heading" />
+
+            <TextView
+                android:id="@+id/movie_overview"
+                style="@style/movie_overview"
+                tools:text="@string/movie_overview" />
+
+            <LinearLayout
+                android:id="@+id/extras"
+                style="@style/linear_layout_5">
+
+                <View
+                    android:id="@+id/view_extras"
+                    style="@style/view_extras" />
+
+                <TextView
+                    android:id="@+id/movie_trailer"
+                    style="@style/movie_trailer" />
+
+                <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/trailersRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff"
+                    android:elevation="12dp" />
+
+                <TextView
+                    android:id="@+id/noTrailerView"
+                    style="@style/no_trailer" />
+
+                <View
+                    android:id="@+id/view_2"
+                    style="@style/view_2" />
+
+                <TextView
+                    android:id="@+id/movie_review"
+                    style="@style/movie_review" />
+
+                <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/reviewsRV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+
+                <TextView
+                    android:id="@+id/noReviewView"
+                    style="@style/no_review_view" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</layout>
